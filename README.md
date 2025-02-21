@@ -82,7 +82,3 @@ We'd love your help making NodeBeat better! Here's how:
 - Adding alerts when things go wrong
 - Supporting more Ethereum clients
 - Writing better documentation
-
-## License
-
-MIT - which means you can do pretty much anything with this code. See [LICENSE](LICENSE) for details.
