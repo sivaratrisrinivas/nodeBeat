@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Node Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <h1><i class="fab fa-ethereum"></i> Ethereum Node Monitor</h1>
+    <div id="stats">
+        <p>
+            <i class="fas fa-sync-alt"></i>
+            Sync Status: <span id="sync-status">Loading...</span>
+        </p>
+        <p>
+            <i class="fas fa-network-wired"></i>
+            Peer Count: <span id="peer-count">Loading...</span>
+        </p>
+        <p>
+            <i class="fas fa-cube"></i>
+            Current Block: <span id="block-number">Loading...</span>
+        </p>
+    </div>
+    <div id="metrics-grid" class="metrics-grid"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
