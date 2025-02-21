@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nodebeat
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALCHEMY_API_KEY
+        sync: false # This will prompt to set it in Render dashboard 

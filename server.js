@@ -1,7 +1,7 @@
 const express = require('express');
 const { Network, Alchemy } = require("alchemy-sdk");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public')); // Serve static files
 
@@ -105,14 +105,5 @@ app.get('/advanced-metrics', async (req, res) => {
     }
 });
 
-// Kill any existing process on port 3000 (Windows command)
-require('child_process').exec('npx kill-port 3000', (error) => {
-    if (error) {
-        console.log('Port 3000 was not in use');
-    } else {
-        console.log('Killed process on port 3000');
-    }
-
-    // Start the server
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-});
+// Remove the kill-port section and replace with simple listen
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
