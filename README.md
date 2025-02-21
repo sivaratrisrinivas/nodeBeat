@@ -2,7 +2,10 @@
 
 A simple, clean dashboard to watch your Ethereum node's health in real-time.
 
-![NodeBeat Dashboard](dashboard-screenshot.png)
+## Dashboard Preview
+![NodeBeat Dashboard](assets/dashboard.png)
+
+*Real-time monitoring of node status, network peers, block height, gas prices, and system metrics*
 
 ## Why?
 
